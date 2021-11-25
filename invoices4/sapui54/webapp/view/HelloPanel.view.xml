@@ -1,0 +1,16 @@
+<mvc:View controllerName="logaligroup.sapui54.controller.HelloPanel" 
+          xmlns="sap.m" 
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:core="sap.ui.core" >
+          <Panel headerText="{i18n>helloPanel}" class="sapUiResponsiveMargin" width="auto"> 
+                    <content>
+                        <!--<Text text = "Hello word AppView"/>-->
+                        <Button text="{i18n>helloDialog}" icon="sap-icon://action" press="onOpenDialog" class="sapUiSmallMarginEnd"></Button>
+                        <Button text="{i18n>showHelloButton}" press="onShowHello" class="sapUiSmallMarginEnd"></Button>
+                        <Input value="{/recipient/name}"   
+                        width="60%" valueLiveUpdate="true"></Input>
+                        <Text text = "{/recipient/name}" class="sapUiSmallMarginEnd boldElement" />
+                    </content>
+                </Panel>
+                <core:Fragment fragmentName="logaligroup.sapui54.view.Form01" type="XML"/>
+          </mvc:View>
